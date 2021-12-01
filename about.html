@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel= "stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Recetas de cocina</title>
+    <header>
+        <h1 class="font-effect-shadow-multiple">Recetas de cocina</h1>
+    </header>
+        <nav>
+            <ul>
+                <li><a href ="index.html">Inicio</a></li>
+                <li><a href="receta.html">Receta</a></li>
+                <li><a href="about.html">Acerca de mí</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li><a href="Registrese.html">Registrese</a></li>
+            </ul>
+            <div class= "hide">
+                <i class = "fa fa-bars" aria-hidden="true"></i>Menu
+            </div>
+        </nav>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+    $(".hide").on('click', function(){
+        $("nav ul").toggle('slow');
+    })
+</script>
+<body>
+    <section>
+        <div class= "contenedor">
+            <div class ="elemento10"><img src="imagenes/Foto.jpg" alt = "imagen" width= 75% height= 75%></div>
+            <div class ="elemento20">Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde la década de 1500, cuando un impresor desconocido tomó una galera de tipos y la mezcló para hacer un libro de muestras tipográficas. Ha sobrevivido no solo a cinco siglos, sino también al salto a la composición tipográfica electrónica, permaneciendo esencialmente sin cambios. Se popularizó en la década de 1960 con el lanzamiento de hojas de Letraset que contenían pasajes de Lorem Ipsum y, más recientemente, con software de autoedición como Aldus PageMaker que incluía versiones de Lorem Ipsum..</div>
+        </div>
+    </section>
+<footer>
+    <i class="bx bxl-instagram"></i>
+    <i class="bx bxl-facebook-circle" ></i>
+    <i class="bx bxl-pinterest" ></i>
+    <i class="bx bxl-linkedin-square" ></i>
+        <p>Derechos reservados 2021</p>
+</footer>
+</body>
+</html>

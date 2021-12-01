@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="CSS/main.css">
+   <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel= "stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  <title>Recetas de cocina</title>
+</head>
+<header>
+    <h1 class="font-effect-shadow-multiple">Recetas de cocina</h1>
+</header>
+    <nav>
+        <ul>
+            <li><a href ="index.html">Inicio</a></li>
+            <li><a href="receta.html">Receta</a></li>
+            <li><a href="about.html">Acerca de mí</a></li>
+            <li><a href="sucursales.html">Sucursales</a></li>
+            <li><a href="Registrese.html">Registrese</a></li>
+        </ul>
+        <div class= "hide">
+            <i class = "fa fa-bars" aria-hidden="true"></i>Menu
+        </div>
+    </nav>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+$(".hide").on('click', function(){
+    $("nav ul").toggle('slow');
+})
+</script>
+   <section>
+       <h2><b>Formulario de Registro</b></h2>
+       <br>
+       <form>
+       <div class="form-row mt-5">
+        <div class="col-md-4 mb-3">
+            <label for="validarNombre">Nombre:<span class="red">*</span></label>
+            <input type="text" class="form-control" id="validarNombre" name="validarNombre" required>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+            <label for="validarApellidos">Apellidos:<span class="red">*</span></label>
+            <input type="text" class="form-control" id="validarApellidos" name="validarApellidos" required>
+        </div>
+    </div>
+  
+    <div class="form-row">
+      <div class="col-md-4 mb-3">
+          <label for="validarDireccion">Direccion:<span class="red">*</span></label>
+          <input type="text" class="form-control" id="validarDireccion" name="validarDireccion" required>
+      </div>
+  </div>
+
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+        <label for="validarNumero">Número:<span class="red">*</span></label>
+        <input type="text" class="form-control" id="validarNumero" name="validarNumero" required>
+    </div>
+</div>
+
+<div class="form-row">
+  <div class="col-md-4 mb-3">
+      <label for="validarCiudad">Ciudad:<span class="red">*</span></label>
+      <input type="text" class="form-control" id="validarCiudad" name="validarCiudad" required>
+  </div>
+</div>
+
+<div class="form-row">
+  <div class="col-md-4 mb-3">
+      <label for="validarPostal">Código Postal:<span class="red">*</span></label>
+      <input type="text" class="form-control" id="validarPostal" name="validarPostal" required>
+  </div>
+</div>
+
+<div class="form-row">
+  <div class="col-md-4 mb-3">
+      <label for="validarTelefono">Teléfono:<span class="red">*</span></label>
+      <input type="text" class="form-control" id="validarTelefono" name="validarTelefono" required>
+  </div>
+</div>
+
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+            <label for="validarEmail">Email:<span class="red">*</span></label>
+            <input type="email" class="form-control" id="validarEmail" name="validarEmail" required>
+        </div>
+    </div>
+
+    <div class="form-check form-check-inline">
+      <label class="form-check-label" for="inlineRadio1">Género:</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio2">Masculino</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label" for="inlineRadio5">Fenenino</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+      <label class="form-check-label" for="inlineRadio4">Otro</label>
+    </div>
+    <br>
+    <select class="custom-select custom-select-lg mb-5">
+      <option selected>Estudios cursados</option>
+      <option value="Primario">Primario</option>
+      <option value="Secundario">Secundario</option>
+      <option value="Terciario">Terciario</option>
+      <option value="Universitario">Universitario</option>
+      <option value="Otro">Otro</option>
+    </select>
+    <button class="btn btn-primary" type="Enviar">Enviar</button>
+   </form>
+
+<p>Si hace click en el botón "Enviar", la información será enviada a la página "show_data.html"</p>
+  </section>
+<footer>
+  <i class="bx bxl-instagram"></i>
+  <i class="bx bxl-facebook-circle" ></i>
+  <i class="bx bxl-pinterest" ></i>
+  <i class="bx bxl-linkedin-square" ></i>
+      <p>Derechos reservados 2021</p>
+</footer>
+

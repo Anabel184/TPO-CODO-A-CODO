@@ -1,0 +1,137 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+  font-family: 'Century Gothic', sans-serif;
+}
+header{
+    width: 100%;
+    padding: 20px;
+    background-image: linear-gradient(rgb(0, 174, 255), rgb(0, 255, 213));
+    text-align: center;
+    color:#1e0563;
+    font-family: 'Sofia';
+    font-size: 23px;
+
+}
+nav ul {
+        list-style: none;
+        background: rgb(0, 255, 213);
+        text-align: center;
+}
+nav ul li {
+        display: inline-block;
+        color: black;
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 20px;
+        transition: all ease-in-out 250 ms;
+}
+ul li a {
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+}
+nav ul li:hover {
+        background: rgb(44, 155, 136);
+}
+.hide{
+    font-size: 22px;
+    padding: 16px;
+    background-color: rgb(0, 255, 213);
+    color:rgb(15, 15, 15);
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 768px){
+    ul li {
+        width: 100%;
+        padding: 16px;
+        text-align: left;
+    }
+    nav ul{
+        display: none;
+
+    }
+    .hide {
+        display: block;
+    }
+}    
+section{
+    width: 100%;
+    height: 100%;
+    background-color: blanchedalmond;
+    padding: 25px;
+}
+h2{
+    text-shadow: 2px 2px 5px red;
+    animation-duration: 4s;
+    text-align: center;
+}
+
+.grid-container {
+        display: grid;
+        grid-auto-columns: 50px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-gap: 10px;
+}
+.grid-container > div {
+        background-color: #f1f1f1;
+        border: 5px solid black;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+}
+@media (max-width: 768px){
+    .grid-container{
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    display: inline-block;
+}}
+.contenedor{
+    height: auto;
+    width: 100%;
+    background-color: cornsilk;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.elemento10{
+    width: 50%;
+    height: 100%;
+    min-width: 300px;
+    padding:30px;
+}
+.elemento20{
+    width: 50%;
+    height: 100%;
+    min-width: 300px;
+    text-align: justify;
+    padding: 30px;
+        
+}
+@media (max-width: 760px){
+    .elemento10, .elemeto20{
+        width: 50%;
+    }
+}
+menu{
+    padding:10px;
+    background-color: cornsilk;
+}
+.red {
+        color: red;
+}
+footer {
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 174, 255), rgb(0, 255, 213));
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
